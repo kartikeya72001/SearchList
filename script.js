@@ -1,5 +1,28 @@
 const users = [
     {
+        "id": 0,
+        "name": "Kartikeya Agarwal",
+        "username": "Kartikeya72001",
+        "email": "kartikeya72001@gmail.com",
+        "address": {
+          "street": "Secotr 13",
+          "suite": "A-3/701",
+          "city": "New Delhi",
+          "zipcode": "110085",
+          "geo": {
+            "lat": "28.6139",
+            "lng": "77.2090"
+          }
+        },
+        "phone": "9718502020",
+        "website": "kartikeya72001.github.io",
+        "company": {
+          "name": " ",
+          "catchPhrase": "",
+          "bs": "Web Development"
+        }
+      },
+    {
       "id": 1,
       "name": "Leanne Graham",
       "username": "Bret",
