@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" href="">
+        <link rel="stylesheet" href="style.css">
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Search</title>
+    </head>
+    <body>
+        <div class="con-search notValue">
+            <div class="con-input">
+                <input
+                    onblur="handleBlur()"
+                    onfocus="handleFocus(event)"
+                    placeholder="Search Object"
+                    oninput="handleSearch(event)"
+                    type="text">
+                <i class="bx bx-search"></i>
+                <i onclick="handleRemove()" class="bx bx-x"></i>
+            </div>
+            <div class="content-results">
+                <div class="con-results">
+                    <div class="not-results">Not Results</div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
