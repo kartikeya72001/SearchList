@@ -283,6 +283,9 @@ function handleSearch(evt) {
     })
     renderResults(newUsers, value)
 }
+function Capitalize(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
 
 function renderResults(results, value) {
     const conResults = document.querySelector('.con-results')
@@ -302,7 +305,8 @@ function renderResults(results, value) {
         const text = document.createElement('p')
         const web = document.createElement('div')
         web.className = 'web'
-        title.innerHTML = result.name.toLowerCase().replace(value, `<b>${value}</b>`)
+        const capitalize = Capitalize(result.name)
+        title.innerHTML = capitalize.replace(value, `<b>${value}</b>`)
         text.innerHTML = result.email.toLowerCase().replace(value, `<b>${value}</b>`)
         web.innerHTML = result.website.toLowerCase().replace(value, `<b>${value}</b>`)
         resultElement.appendChild(title)
